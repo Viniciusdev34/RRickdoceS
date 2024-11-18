@@ -50,8 +50,15 @@
     left: 0;
     top: 20vh;
     background-color: brown;
-    width: 50%;
+    width: 0;
+    overflow: hidden;
     opacity: 0;
+    transition: .5s ease;
+}
+.navbar.open{
+  opacity: 1;
+  width: 50%;
+  overflow: auto;
 }
 .navbar ul{
     margin: 10px;
@@ -59,6 +66,16 @@
 }
 .navbar ul li{
     margin-top: 30px;
+}
+.navbar ul .lanc{
+  background-color: yellow;
+  padding: 20px 0;
+  color: #a8110c;
+}
+.navbar ul .lanc a{
+  background-color: yellow;
+  padding: 20px 0;
+  color: #a8110c;
 }
 .navbar ul li a{
     text-decoration: none;
